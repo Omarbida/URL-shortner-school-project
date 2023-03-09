@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ROUTES_NAMES } from "../constants";
+import useAuth from "../hooks/useAuthContext";
 function LogInForm(props) {
+  const authContext = useAuth();
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
   const [errors, setErrors] = useState([false, false]);
@@ -18,7 +20,11 @@ function LogInForm(props) {
       tempErrors[1] = true;
     }
     setErrors(tempErrors);
+    if (!tempErrors[1] && !tempErrors[0]) {
+      authContext.login(emailValue, passwordValue);
+    }
   };
+
   const getError = (i, value) => {
     const tempErrors = [...errors];
     tempErrors[i] = value;

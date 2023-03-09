@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ROUTES_NAMES } from "../constants";
+import useAuth from "../hooks/useAuthContext";
 function SignUpForm(props) {
   const [nameValue, setNameValue] = useState("");
   const [lastNmaeValue, setLastNameValue] = useState("");
@@ -11,6 +12,7 @@ function SignUpForm(props) {
   const [nameCharacLeft, setNameCharLeft] = useState(16);
   const [lastNameCharacLeft, setLastNameCharLeft] = useState(16);
   const navigate = useNavigate();
+  const authContext = useAuth();
   const submiteHandler = () => {
     const tempErrors = [...errors];
     if (nameValue === "") {
@@ -35,6 +37,15 @@ function SignUpForm(props) {
       tempErrors[4] = true;
     }
     setErrors(tempErrors);
+    if (
+      !tempErrors[0] &&
+      !tempErrors[1] &&
+      !tempErrors[2] &&
+      !tempErrors[3] &&
+      !tempErrors[4]
+    ) {
+      authContext.signup(nameValue, lastNmaeValue, emailValue, passwordValue);
+    }
   };
   const getError = (i, value) => {
     const tempErrors = [...errors];
