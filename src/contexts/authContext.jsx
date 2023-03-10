@@ -16,6 +16,7 @@ export const AuthProvider = (props) => {
       lastName: "bida",
       email,
       password,
+      profileimg: "avatar1.png",
     });
   }, []);
   const signup = useCallback((name, lastName, email, password) => {
