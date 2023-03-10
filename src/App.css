@@ -157,16 +157,16 @@ input:focus {
   width: 48%;
   padding-left: 20px;
 }
-form a span {
+.bg-form form a span {
   font-size: 1em;
   color: rgb(38, 89, 191);
   font-weight: 600;
   cursor: pointer;
 }
-form a span:hover {
+.bg-form a span:hover {
   text-decoration: underline;
 }
-button.start-as-gust {
+.bg-form button.start-as-gust {
   background: linear-gradient(
     90deg,
     #388fac,

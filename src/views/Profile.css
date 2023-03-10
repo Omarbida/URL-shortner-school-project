@@ -9,7 +9,8 @@
 }
 .header-profile {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  padding-left: 5%;
   background: radial-gradient(
     rgba(149, 96, 199, 0.7),
     rgba(149, 96, 199, 0.7),
@@ -25,7 +26,6 @@
   display: flex;
   align-items: center;
   padding: 0 20px;
-  height: 80px;
   color: #ffffff;
   justify-content: space-between;
 }
@@ -84,7 +84,13 @@
   padding: 30px 10px;
   color: rgba(0, 0, 0, 0.765);
 }
-.main-profile .url-short {
+.logo {
+  width: 170px;
+  height: 100px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
 }
 h1.profile-h1 {
   width: 100%;

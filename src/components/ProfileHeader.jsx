@@ -10,6 +10,9 @@ function ProfileHeader() {
   };
   return (
     <div className="header-profile">
+      <div className="logo">
+        <img src="logo.png" alt="" />
+      </div>
       <div className="menu-profile">
         <button
           className={btnSelected === 0 ? "selected" : ""}

@@ -25,13 +25,23 @@ export const AuthProvider = (props) => {
       lastName,
       email,
       password,
+      profileimg: "avatar1.png",
     });
   }, []);
   const logout = useCallback(() => {
     setUser(null);
   }, []);
+  const guest = useCallback(() => {
+    setUser({
+      name: "Guest",
+      lastName: Math.floor(Math.random() * 1000).toString(),
+      email: "",
+      password: "",
+      profileimg: "avatar1.png",
+    });
+  });
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout }}>
+    <AuthContext.Provider value={{ user, login, signup, logout, guest }}>
       {props.children}
     </AuthContext.Provider>
   );

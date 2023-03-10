@@ -73,7 +73,13 @@ function LogInForm(props) {
           />
 
           <button type="submit">Log In</button>
-          <button className="start-as-gust" type="Button">
+          <button
+            onClick={() => {
+              authContext.guest();
+            }}
+            className="start-as-gust"
+            type="Button"
+          >
             Start as gust
           </button>
           <a>

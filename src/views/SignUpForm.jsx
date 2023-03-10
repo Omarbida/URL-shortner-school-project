@@ -145,7 +145,13 @@ function SignUpForm(props) {
           />
           <span>{errors[4] ? "The password is not the same" : ""}</span>
           <button type="submit">Sign Up</button>
-          <button className="start-as-gust" type="Button">
+          <button
+            onClick={() => {
+              authContext.guest();
+            }}
+            className="start-as-gust"
+            type="Button"
+          >
             Start as gust
           </button>
           <a>
