@@ -1,6 +1,8 @@
-import { Link, Shield, ThumbsUp } from "react-feather";
+import { Link as Linklogo, Shield, ThumbsUp } from "react-feather";
+import useAuth from "../hooks/useAuthContext";
 
 function ProfileMain() {
+  const authContext = useAuth();
   return (
     <div className="main-profile">
       <div className="url-short card">
@@ -20,7 +22,16 @@ function ProfileMain() {
           builder, QR codes, browser extension, 50+ app integrations and
           support.
         </p>
-        <button className="profile-btn">Create Account</button>
+        <button
+          onClick={() => {
+            if (authContext.user?.guest) {
+              authContext.logout();
+            }
+          }}
+          className="profile-btn"
+        >
+          Create Account
+        </button>
       </div>
       <div className="profile-info">
         <h1 className="">Simple and fast URL shortener!</h1>
@@ -51,7 +62,7 @@ function ProfileMain() {
           </p>
         </div>
         <div className="tile">
-          <Link size={60} />
+          <Linklogo size={60} />
           <p className="text text-center">
             Use any link, no matter what size, ShortURL always shortens
           </p>

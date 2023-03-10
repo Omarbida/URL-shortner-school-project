@@ -17,6 +17,7 @@ export const AuthProvider = (props) => {
       email,
       password,
       profileimg: "avatar1.png",
+      guest: false,
     });
   }, []);
   const signup = useCallback((name, lastName, email, password) => {
@@ -26,6 +27,7 @@ export const AuthProvider = (props) => {
       email,
       password,
       profileimg: "avatar1.png",
+      guest: false,
     });
   }, []);
   const logout = useCallback(() => {
@@ -38,6 +40,7 @@ export const AuthProvider = (props) => {
       email: "",
       password: "",
       profileimg: "avatar1.png",
+      guest: true,
     });
   });
   return (

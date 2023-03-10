@@ -153,6 +153,7 @@ p.text {
 }
 p.text a {
   color: rgba(149, 96, 199, 1);
+  cursor: pointer;
 }
 p.text.text-center {
   text-align: center;

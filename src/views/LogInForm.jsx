@@ -34,11 +34,11 @@ function LogInForm(props) {
     <div className="container">
       <div className="bg-info">
         <div className="info">
-          <div>Welcom Back</div>
+          <div>Welcom to SHORT URL</div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            optio consequuntur quis doloremque maiores voluptas quos reiciendis
-            officiis exercitationem
+            ShortURL is a free service to shorten URLs and create short links
+            Create a premium account to shorten unlimited URLs with more
+            features for your projects
           </p>
         </div>
       </div>
