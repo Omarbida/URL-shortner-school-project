@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
 .container-profile {
   background: #ffffff;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Fredoka One", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 .header-profile {
   display: flex;
@@ -68,14 +72,115 @@
   margin-bottom: 15px;
   box-shadow: 0 5px 5px rgba(149, 96, 199, 0.6);
 }
-input.search-profile {
-  width: 200px;
-  height: 35px;
-  padding: 5px;
-  padding-left: 10px;
-  margin: 0;
+.main-profile {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2em;
 }
-.search-form-profile {
+.main-profile {
+  width: 100%;
+  padding: 30px 10px;
+  color: rgba(0, 0, 0, 0.765);
+}
+.main-profile .url-short {
+}
+h1.profile-h1 {
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+}
+.card {
+  margin: 0 auto;
+  border-radius: 1em;
+  box-shadow: 0 2px 20px rgba(132, 0, 255, 0.2);
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+.main-profile .url-short input {
+  width: 100%;
+  padding: 15px 25px;
+  font-size: 1.5em;
+  height: 50px;
+  border: none;
+  color: rgb(68, 67, 67);
+  background-color: white;
+  box-shadow: 0 2px 20px rgba(132, 0, 255, 0.1);
+  border-radius: 2em;
+}
+button.profile-btn {
+  padding: 15px 25px;
+  font-size: 1.3em;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #7036b3,
+    #7846b1,
+    #7d51af,
+    #8666aa,
+    #7d51af,
+    #7846b1,
+    #7036b3
+  );
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 2em;
+  box-shadow: 0 0 20px rgba(132, 0, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
+}
+button.profile-btn:hover {
+  filter: brightness(70%);
+}
+p.text {
+  width: 100%;
+
+  font: 16px "source sans pro", arial;
+  line-height: 1.5;
+}
+p.text a {
+  color: rgba(149, 96, 199, 1);
+}
+p.text.text-center {
+  text-align: center;
+}
+p.text.text-discr {
+  margin: 5px 0;
+}
+.profile-footer {
+  height: 70px;
+  background: radial-gradient(
+    rgba(149, 96, 199, 0.7),
+    rgba(149, 96, 199, 0.7),
+    rgba(149, 96, 199, 0.8),
+    rgba(149, 96, 199, 0.9),
+    rgba(149, 96, 199, 0.9)
+  );
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.profile-info {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+.box {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 10px;
 }
