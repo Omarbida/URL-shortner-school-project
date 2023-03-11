@@ -1,7 +1,7 @@
 import { Link as Linklogo, Shield, ThumbsUp } from "react-feather";
 import useAuth from "../hooks/useAuthContext";
 
-function ProfileMain() {
+function ProfileMainHome() {
   const authContext = useAuth();
   return (
     <div className="main-profile">
@@ -77,4 +77,4 @@ function ProfileMain() {
     </div>
   );
 }
-export default ProfileMain;
+export default ProfileMainHome;

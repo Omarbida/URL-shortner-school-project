@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Bell, Home, Link, Menu, MessageCircle, Search } from "react-feather";
+import { Home, Link, Menu } from "react-feather";
 import useAuth from "../hooks/useAuthContext";
 
-function ProfileHeader() {
+function ProfileHeader(props) {
   const authContext = useAuth();
   const [btnSelected, setBtnSelected] = useState(0);
   const selectBtn = (i) => {
@@ -18,6 +18,7 @@ function ProfileHeader() {
           className={btnSelected === 0 ? "selected" : ""}
           onClick={() => {
             selectBtn(0);
+            props.onChangeView(1);
           }}
         >
           <Home size={20} />
@@ -27,6 +28,7 @@ function ProfileHeader() {
           className={btnSelected === 1 ? "selected" : ""}
           onClick={() => {
             selectBtn(1);
+            props.onChangeView(2);
           }}
         >
           <Link size={20} />

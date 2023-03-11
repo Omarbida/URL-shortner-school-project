@@ -1,6 +1,6 @@
 import { Navigate } from "react-router";
-import { ROUTES_NAMES } from "../constants";
-import useAuth from "../hooks/useAuthContext";
+import { ROUTES_NAMES } from "../../constants";
+import useAuth from "../../hooks/useAuthContext";
 
 const AuthGuard = ({ children }) => {
   const authContext = useAuth();

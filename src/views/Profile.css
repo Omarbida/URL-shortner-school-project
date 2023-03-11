@@ -191,3 +191,44 @@ p.text.text-discr {
   gap: 30px;
   padding: 0 10px;
 }
+.mylinks.card {
+  box-shadow: none;
+}
+.mylinks h1 {
+  width: 100%;
+  text-align: center;
+}
+.mylinks h2 {
+  width: 100%;
+  text-align: center;
+}
+.links-info.card {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+}
+.links-info p {
+  padding: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0.5em;
+}
+a.link {
+  background: radial-gradient(
+    rgba(149, 96, 199, 0.7),
+    rgba(149, 96, 199, 0.7),
+    rgba(149, 96, 199, 0.8),
+    rgba(149, 96, 199, 0.9),
+    rgba(149, 96, 199, 0.9)
+  );
+  padding: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0.5em;
+  color: white;
+}
