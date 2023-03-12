@@ -1,3 +1,4 @@
+import { Paperclip } from "react-feather";
 import useAuth from "../hooks/useAuthContext";
 
 function ProfileMainMyLinks() {
@@ -9,41 +10,61 @@ function ProfileMainMyLinks() {
         <div className="links-info card">
           <h2>My link name</h2>
           <p className="lable">Original URL:</p>
-          <a className="link">
-            original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
-          </a>
+          <div className="link">
+            <a className="link-url">
+              original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
+            </a>
+            <button text="Coppy to Clipboard">
+              <Paperclip size={30} />{" "}
+            </button>
+          </div>
           <p className="lable">Short URL:</p>
-          <a className="link">short/link.url</a>
+          <div className="link">
+            <a className="link-url">short/link.URL</a>
+            <button text="Coppy to Clipboard">
+              <Paperclip size={30} />{" "}
+            </button>
+          </div>
         </div>
 
         <div className="links-info card">
           <h2>My link name</h2>
           <p className="lable">Original URL:</p>
-          <a className="link">
-            original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
-          </a>
+          <div className="link">
+            <a className="link-url">
+              original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
+            </a>
+            <button text="Coppy to Clipboard">
+              <Paperclip size={30} />{" "}
+            </button>
+          </div>
           <p className="lable">Short URL:</p>
-          <a className="link">short/link.url</a>
+          <div className="link">
+            <a className="link-url">short/link.URL</a>
+            <button text="Coppy to Clipboard">
+              <Paperclip size={30} />{" "}
+            </button>
+          </div>
         </div>
 
         <div className="links-info card">
           <h2>My link name</h2>
           <p className="lable">Original URL:</p>
-          <a className="link">
-            original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
-          </a>
+          <div className="link">
+            <a className="link-url">
+              original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
+            </a>
+            <button text="Coppy to Clipboard">
+              <Paperclip size={30} />{" "}
+            </button>
+          </div>
           <p className="lable">Short URL:</p>
-          <a className="link">short/link.url</a>
-        </div>
-
-        <div className="links-info card">
-          <h2>My link name</h2>
-          <p className="lable">Original URL:</p>
-          <a className="link">
-            original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
-          </a>
-          <p className="lable">Short URL:</p>
-          <a className="link">short/link.url</a>
+          <div className="link">
+            <a className="link-url">short/link.URL</a>
+            <button text="Coppy to Clipboard">
+              <Paperclip size={30} />{" "}
+            </button>
+          </div>
         </div>
       </div>
     </div>
