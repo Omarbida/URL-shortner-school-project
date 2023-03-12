@@ -13,7 +13,37 @@ function ProfileMainMyLinks() {
             original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
           </a>
           <p className="lable">Short URL:</p>
-          <a className="link">short.link</a>
+          <a className="link">short/link.url</a>
+        </div>
+
+        <div className="links-info card">
+          <h2>My link name</h2>
+          <p className="lable">Original URL:</p>
+          <a className="link">
+            original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
+          </a>
+          <p className="lable">Short URL:</p>
+          <a className="link">short/link.url</a>
+        </div>
+
+        <div className="links-info card">
+          <h2>My link name</h2>
+          <p className="lable">Original URL:</p>
+          <a className="link">
+            original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
+          </a>
+          <p className="lable">Short URL:</p>
+          <a className="link">short/link.url</a>
+        </div>
+
+        <div className="links-info card">
+          <h2>My link name</h2>
+          <p className="lable">Original URL:</p>
+          <a className="link">
+            original/link/&=454645646464464684786464618648563416841641644135184864154634634163464841351465444.link
+          </a>
+          <p className="lable">Short URL:</p>
+          <a className="link">short/link.url</a>
         </div>
       </div>
     </div>
