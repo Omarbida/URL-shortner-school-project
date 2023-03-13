@@ -264,7 +264,19 @@ div.link button:hover {
 div.link button[text]:hover::after {
   content: attr(text);
   position: absolute;
-  color: black;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    #7036b380,
+    #7846b180,
+    #7d51af80,
+    #8666aa80,
+    #7d51af80,
+    #7846b180,
+    #7036b380
+  );
+  padding: 3px;
+  border-radius: 5px;
   top: -100%;
   left: 0;
 }
